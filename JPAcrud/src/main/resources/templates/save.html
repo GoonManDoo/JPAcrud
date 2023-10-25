@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>save</title>
+</head>
+<body>
+<!-- action = 목적지(서버주소) -->
+<!-- method: http request method(get, post) -->
+<!-- GET:주소창에 보임, POST:주소창에 안보임 | 대부분 POST로 보냄 -->
+<form action="/board/save" method="post">
+    작성자: <input type="text" name="boardWriter"> <br>
+    비밀번호: <input type="text" name="boardPass"> <br>
+    제목: <input type="text" name="boardTitle"> <br>
+    내용: <textarea name="boardContents" cols="30" rows="30"></textarea> <br>
+    <input type="submit" value="글작성">
+</form>
+</body>
+</html>

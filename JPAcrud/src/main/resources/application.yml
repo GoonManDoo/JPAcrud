@@ -1,0 +1,27 @@
+myapp:
+  message: inSide Value
+
+# 서버 포트
+server:
+  port: 8083
+
+# database
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/mysql?serverTimezone=Asia/Seoul
+    username: root
+    password: root
+  thymeleaf:
+    cache : false
+  rabbitmq:
+    host: 192.168.20.85
+    port: 5672
+    username: user2
+    password: user2
+
+    # spring data jpa
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL57Dialect
+    open-in-view: false
+    show-sql: true
